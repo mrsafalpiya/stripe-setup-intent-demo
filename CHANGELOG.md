@@ -1,5 +1,31 @@
 # Changelog
 
+## [1.3.0] - 2025-11-20
+
+### Changed - Individual Card Input Fields
+
+**UI Improvement:** Replaced combined card input with separate fields for better UX.
+
+#### What Changed?
+
+**Frontend:**
+- Replaced `CardElement` with individual Stripe Elements:
+  - `CardNumberElement` - Dedicated card number input
+  - `CardExpiryElement` - Separate expiry date field
+  - `CardCvcElement` - Separate CVC field
+- Improved layout with card number on full width, expiry and CVC side-by-side
+- Better visual separation between input fields
+- More intuitive form layout matching standard payment forms
+
+#### Benefits
+
+1. **Better UX**: Matches familiar payment form patterns users expect
+2. **Clearer Fields**: Each field has its own label and validation
+3. **Responsive Layout**: Expiry and CVC in a 2-column grid on larger screens
+4. **Professional Look**: More polished appearance with separate, focused inputs
+
+---
+
 ## [1.2.0] - 2025-11-20
 
 ### Added - Payment Method Removal
